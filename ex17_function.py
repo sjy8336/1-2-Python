@@ -186,4 +186,12 @@ print(x)
 # 0 ~ n 까지의 값을 출력하는 반복문이 들어있는 함수를 만드세요
 # 한 줄에 10개씩 출력하도록 하세요
 # show_num(n)
+# 0 1 2 3 4 5 6 7 8 9
+# 10 11 12 13 14 15 16 17 18 19
 
+def show_num(n):
+    for i in range(n):
+        print(f'{i:2d}', end=' ')
+        if i % 10 == 9:
+            print()
+show_num(50)
